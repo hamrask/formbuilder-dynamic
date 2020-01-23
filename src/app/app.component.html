@@ -1,0 +1,11 @@
+<div class="form">
+  <div style="text-align:center">
+    <h1>
+      Registration Form
+    </h1>
+  </div>
+  <app-dynamic-form [fields]="regConfig" (submit)="submit($event)" *ngIf="regConfig.length > 0">
+  </app-dynamic-form>
+
+  <button class="save" (click)="adddata()">save</button>
+</div>
